@@ -9,7 +9,7 @@ import (
 
 var Ctx context.Context = context.TODO()
 var DB *mongo.Database
-var clientOptions = options.Client().ApplyURI("mongodb+srv://admin:test123...@cluster0.lmnrit6.mongodb.net/?retryWrites=true&w=majority")
+var clientOptions = options.Client().ApplyURI("mongodb+srv://admin:test123...@cluster0.lmnrit6.mongodb.net/go-vets-backend?retryWrites=true&w=majority")
 func ConnectDB() {
     client, err := mongo.Connect(Ctx, clientOptions)
     if err != nil {
